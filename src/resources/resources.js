@@ -76,7 +76,7 @@ const resources = [
         ]
     },
     {
-        category: "Sanity and headless CMS",
+        category: "Sanity",
         text: "Sanity er et headless CMS som står for innholdsadministrasjon. Innhold hentes inn i applikasjoner via GROQ-spørringer.",
         sources: [
             {
@@ -94,3 +94,5 @@ const resources = [
         ]
     },
 ]
+
+export default resources

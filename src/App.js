@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import './css/main.css';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <h1>Ressurser</h1>
+    <Layout/>
   );
 }
 
