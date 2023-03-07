@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import HandleSources from './Resources';
+import Header from './Header';
 
 export default function Layout() {
     const [HTML, setState] = useState("HTML")
@@ -31,9 +32,7 @@ export default function Layout() {
 
     return(
         <>
-        <header>
-            <h1>Ressursarkiv</h1>
-        </header>
+        <Header header={"Ressursarkiv"}></Header>
         <nav>
         <button id="HTML" className='btn active' onClick={() => StateSource('HTML')}>HTML</button>
         <button id="CSS" className='btn' onClick={() => StateSource('CSS')}>CSS</button>
