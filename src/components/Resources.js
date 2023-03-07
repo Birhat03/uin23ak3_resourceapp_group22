@@ -8,7 +8,7 @@ export default function HandleSources(cat) {
     let urls = []
 
     resources.forEach(res => {
-        if (res.category == cat.name) {
+        if (res.category === cat.name) {
             title = res.category;
             text = res.text;
             res.sources.forEach(link => {urls.push(
@@ -17,9 +17,13 @@ export default function HandleSources(cat) {
         }
     })
 
-    return (<article>
+    return (
+    <section>
+        <article>
                 <h1> {title} </h1>
                 <p> {text} </p>
                 <ul>{urls}</ul>
-            </article>)
+        </article>
+    </section>
+        )
 }
